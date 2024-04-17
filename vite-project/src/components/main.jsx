@@ -1,9 +1,12 @@
-import Trailer from "./Trailer/trailer";
+import Trailer from "./Main components/trailer";
+import Movies from "./Main components/movies";
 
 function main() {
     return (
         <main>
             <Trailer />
+            <Movies />
+            
         </main>
     )
 }
