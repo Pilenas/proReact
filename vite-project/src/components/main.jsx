@@ -1,9 +1,9 @@
-import Article from "./article";
+import Trailer from "./Trailer/trailer";
 
 function main() {
     return (
         <main>
-            <Article />
+            <Trailer />
         </main>
     )
 }

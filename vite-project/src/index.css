@@ -35,14 +35,15 @@ li{
   background-color: grey;
 }
 
-
 main{
+  background-color: rgba(24, 24, 24, 1);
   width: 100%;
   display: flex;
+  justify-content: center;
+  padding: 2em;
 }
 
 article {
-  background-color: rgb(20, 20, 20);
   flex: 1;
   height: 25rem;
 }
