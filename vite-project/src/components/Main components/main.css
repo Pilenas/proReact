@@ -1,16 +1,30 @@
-.trailers {
-    background-color: lime;
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.movies-container {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 400px;
-    gap: 2em;
-
+.movie-card {
+    margin: 1em; 
 }
 
 h2 {
     color: white;
+    font-size: 18px;
+}
+
+.trailers-src {
+    width: 50%;
+    min-height: 400px;
+    margin: 2em;
+}
+
+h1 {
+    color: white;
+}
+
+.video-trailers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

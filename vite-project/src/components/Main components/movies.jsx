@@ -1,5 +1,4 @@
 import './main.css';
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -33,7 +32,6 @@ function MovieList() {
       <div className="movie-card">
         <h2>{movie.title}</h2>
         <img src={movie.poster} alt="" />
-        {/* Add more movie details as needed */}
       </div>
     );
   }

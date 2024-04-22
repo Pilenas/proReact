@@ -5,10 +5,7 @@
 }
 
 .app {
-  width: 95%;
-  border: 1px solid black;
   min-height: 400px;
-  padding: .5rem;
 }
 
 header{
