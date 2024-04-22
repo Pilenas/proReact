@@ -1,4 +1,4 @@
-import './trailer.css';
+import './main.css';
 import axios from "axios";
 import { useState } from 'react';
 
@@ -17,7 +17,7 @@ function Trailer() {
     getTrailers(setTrailers)
     return (
         <section className="video-trailers">
-            <video src="https://youtu.be/qtRKdVHc-cE" className="trailers-src"></video>
+            <iframe className='trailers-src' src="https://www.youtube.com/embed/qtRKdVHc-cE"></iframe>
         </section>
     )
     }

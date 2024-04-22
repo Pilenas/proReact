@@ -3,5 +3,14 @@
 }
 
 .movies-container {
-    background-color: lime;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 400px;
+    gap: 2em;
+
+}
+
+h2 {
+    color: white;
 }

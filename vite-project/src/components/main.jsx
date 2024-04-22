@@ -1,5 +1,5 @@
-import Trailer from "./Main components/trailer";
-import Movies from "./Main components/movies";
+import Trailer from "./main components/trailer";
+import Movies from "./main components/movies";
 
 function main() {
     return (
