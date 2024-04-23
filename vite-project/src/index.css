@@ -5,15 +5,53 @@
 }
 
 .app {
-  width: 95%;
+  width: 100%;
   border: 1px solid black;
   min-height: 400px;
   padding: .5rem;
 }
 
-header{
+.header {
+  display: flex;
+  justify-content: space-between; /* Centrerar loggan till vänster och sökrutan till höger */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.black {
   background-color: black;
-  height: 4rem;
+  color: white;
+  padding: 5px 10px;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+  padding: 5px 10px;
+  margin-right: 5rem;
+}
+
+.search-box {
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+  margin-right: 5rem;
+}
+
+.search-box input {
+  flex: 1; 
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-align: center; 
 }
 
 nav{
@@ -47,8 +85,28 @@ article {
   height: 25rem;
 }
 
-footer {
-  height: 4rem;
-  width: 100%;
-  background-color: grey;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
