@@ -5,9 +5,6 @@ function nav() {
         <nav>
             <ul>
                 <Navitem />
-                <Navitem />
-                <Navitem />
-                <Navitem />
             </ul>
         </nav>
     )
