@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* Grundläggande styling */
 .app {
   width: 100%;
   border: 1px solid black;
@@ -12,11 +13,12 @@
 
 .header {
   display: flex;
-  justify-content: space-between; /* Centrerar loggan till vänster och sökrutan till höger */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  padding: 20px 40px;
+  background-color: #0c0c0c; /* Mörkgrått för header */
+  color: #f5c518; /* Gul för text */
+  font-size: 20px;
 }
 
 .logo {
@@ -59,27 +61,55 @@
   box-shadow: 1px 1px 8px 2px rgb(131, 131, 131);
 }
 
-nav{
-  width: 100%;
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 8rem;
 }
 
-ul{
+.search-box input {
+  flex: 1;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: #0c0c0c; /* Mörkgrått för navigering */
+}
+
+ul {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: .5rem 0;
   list-style-type: none;
-  gap: .5rem;
 }
 
-li{
+li {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
-  background-color: grey;
+  background-color: #0c0c0c; /* Mörkgrått för list items */
+  color: #f5c518; /* Gul för text */
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
 }
 
-main{
-  background-color: rgba(24, 24, 24, 1);
+li:hover {
+  background-color: #f5c518; /* Gul vid hover */
+  color: #0c0c0c; /* Mörkgrå vid hover */
+}
+
+main {
+  background-color: #181818; /* Mörkgrått för huvudinnehåll */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -97,8 +127,8 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #0c0c0c; /* Mörkgrått för footer */
+  color: #f5c518; /* Gul för text */
   padding: 20px;
 }
 
@@ -110,7 +140,7 @@ article {
 }
 
 .footer a {
-  color: #fff;
+  color: #f5c518; /* Gul för länkar */
   text-decoration: none;
   padding: 5px 10px;
 }
