@@ -103,6 +103,12 @@ li {
   transition: background-color 0.3s ease;
 }
 
+/* Styla länkarna inuti listelementen */
+li a {
+  color: inherit; /* Använd samma färg som för listans text */
+  text-decoration: none; /* Ingen understreckning */
+}
+
 li:hover {
   background-color: #f5c518; /* Gul vid hover */
   color: #0c0c0c; /* Mörkgrå vid hover */
