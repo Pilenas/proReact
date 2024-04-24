@@ -20,37 +20,43 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  width: 120px;
+  margin: 1em;
+  margin-right: 30px;
 }
 
-.black {
-  background-color: black;
-  color: white;
-  padding: 5px 10px;
+.star {
+  font-size: 38px;
+  color: gold;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.yellow {
-  background-color: yellow;
-  color: black;
-  padding: 5px 10px;
-  margin-right: 5rem;
+.star:hover {
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
 .search-box {
   flex: 1; 
   display: flex; 
   align-items: center; 
-  margin-right: 5rem;
 }
 
-.search-box input {
+.search-input {
   flex: 1; 
   padding: 8px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   text-align: center; 
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  transform: scale(1.01);
+  outline: none;
+  box-shadow: 1px 1px 8px 2px rgb(131, 131, 131);
 }
 
 nav{

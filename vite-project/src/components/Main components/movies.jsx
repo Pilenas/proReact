@@ -33,8 +33,7 @@ function MovieList() {
       <>
       <div className="movie-card">
         <h2>{movie.title}</h2>
-        <i className='fa-regular fa-star'></i>
-        <div className="movie-overlay"></div>
+        <i className="fav fa-solid fa-star"></i>           
         <img src={movie.poster} alt="" />
       </div>
       </>
