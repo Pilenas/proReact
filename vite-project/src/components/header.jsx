@@ -3,13 +3,16 @@ import React from 'react'
 function Header() {
     return (
     <div className="header">
-            <div className="logo">
-                <span className="black">MIN</span>
-                <span className="yellow">FILM</span>
+            <div className="logo-wrapper">
+                <img className='logo' src="./src/logo/logo.png" alt="logo" />
             </div>
 
             <div className="search-box">
-                <input type="text" placeholder="Hitta din film..." />
+                <input className='search-input' type="text" placeholder="Hitta din film..." />
+            </div>
+
+            <div className="fav-btn">
+                <i className="star fa-solid fa-star"></i>           
             </div>
     </div>
         )

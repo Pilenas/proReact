@@ -1,6 +1,7 @@
 import './main.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+<script src="https://kit.fontawesome.com/cdf8014e25.js" crossorigin="anonymous"></script>
 
 function MovieList() {
     const [movies, setMovies] = useState([]);
@@ -29,10 +30,13 @@ function MovieList() {
   
   function MovieCard({ movie }) {
     return (
+      <>
       <div className="movie-card">
         <h2>{movie.title}</h2>
+        <i className="fav fa-solid fa-star"></i>           
         <img src={movie.poster} alt="" />
       </div>
+      </>
     );
   }
   
