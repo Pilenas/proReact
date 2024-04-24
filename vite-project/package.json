@@ -15,12 +15,8 @@
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-router-dom": "^6.23.0"
-=======
     "react-router-dom": "^5.3.4",
     "sort-by": "^0.0.2"
->>>>>>> 30325255355070eb42446a3dac5720547432797a
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
