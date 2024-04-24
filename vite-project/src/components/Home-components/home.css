@@ -5,12 +5,23 @@
 }
 
 .movie-card {
-    margin: 1em; 
+    margin: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
 h2 {
-    color: white;
+    color: #f5c518;
     font-size: 18px;
+    max-width: 10rem;
+    margin-bottom: 1em; 
+}
+
+.movie-poster {
+    width: 100%; 
+    max-width: 200px; 
 }
 
 .trailers-src {
@@ -20,7 +31,7 @@ h2 {
 }
 
 h1 {
-    color: white;
+    color: #f5c518;
 }
 
 .video-trailers {

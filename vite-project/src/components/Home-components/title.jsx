@@ -3,7 +3,7 @@ import './home.css';
 function Title() {
     return (
         <>
-        <h1>Topp 20</h1>
+        <h1>IMDB TOP 20</h1>
         </>
     )
 }

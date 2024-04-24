@@ -10,10 +10,6 @@ function Header() {
             <div className="search-box">
                 <input className='search-input' type="text" placeholder="Hitta din film..." />
             </div>
-
-            <div className="fav-btn">
-                <i className="star fa-solid fa-star"></i>           
-            </div>
     </div>
         )
 }

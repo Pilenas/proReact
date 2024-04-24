@@ -32,10 +32,9 @@ function MovieList() {
     return (
       <>
       <div className="movie-card">
-        <h2>{movie.title}</h2>
-        <i className="fav fa-solid fa-star"></i>           
-        <img src={movie.poster} alt="" />
-      </div>
+    <h2>{movie.title}</h2>
+    <img className="movie-poster" src={movie.poster} alt="" />         
+</div>
       </>
     );
   }
