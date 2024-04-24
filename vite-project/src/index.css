@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* Grundläggande styling */
 .app {
   width: 100%;
   border: 1px solid black;
@@ -16,33 +15,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #0c0c0c; /* Mörkgrått för header */
-  color: #f5c518; /* Gul för text */
+  background-color: #0c0c0c; 
+  color: #f5c518; 
   font-size: 20px;
 }
 
 .logo {
-  width: 120px;
-  margin: 1em;
-  margin-right: 30px;
-}
-
-.star {
-  font-size: 38px;
-  color: gold;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.star:hover {
-  transform: scale(1.10);
-  cursor: pointer;
+  width: 150px;
+  height: 50px; 
+  margin-right: 5rem; 
 }
 
 .search-box {
   flex: 1; 
   display: flex; 
   align-items: center; 
+  height: 50px; 
+  margin-right: 5rem; 
+  margin-bottom: 5px;
+  max-width: 70%;
 }
 
 .search-input {
@@ -61,12 +52,6 @@
   box-shadow: 1px 1px 8px 2px rgb(131, 131, 131);
 }
 
-.search-box {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-right: 8rem;
-}
 
 .search-box input {
   flex: 1;
@@ -80,7 +65,7 @@
 
 nav {
   width: 100%;
-  background-color: #0c0c0c; /* Mörkgrått för navigering */
+  background-color: #0c0c0c; 
 }
 
 ul {
@@ -96,27 +81,24 @@ li {
   align-items: center;
   justify-content: center;
   height: 4rem;
-  background-color: #0c0c0c; /* Mörkgrått för list items */
-  color: #f5c518; /* Gul för text */
-  font-weight: bold;
+  background-color: #0c0c0c; 
+  color: #f5c518; 
   font-size: 1.5rem;
   transition: background-color 0.3s ease;
 }
 
-/* Styla länkarna inuti listelementen */
 li a {
-  color: inherit; /* Använd samma färg som för listans text */
-  text-decoration: none; /* Ingen understreckning */
+  color: inherit; 
+  text-decoration: none; 
 }
 
 li:hover {
-  background-color: #f5c518; /* Gul vid hover */
-  color: #0c0c0c; /* Mörkgrå vid hover */
+  background-color: #f5c518; 
+  color: #0c0c0c; 
 }
 
 main {
-  background-color: #181818; /* Mörkgrått för huvudinnehåll */
-  width: 100%;
+  background-color: #181818;
   display: flex;
   justify-content: center;
   padding: 2em;
@@ -133,8 +115,8 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0c0c0c; /* Mörkgrått för footer */
-  color: #f5c518; /* Gul för text */
+  background-color: #0c0c0c;
+  color: #f5c518; 
   padding: 20px;
 }
 
@@ -146,7 +128,7 @@ article {
 }
 
 .footer a {
-  color: #f5c518; /* Gul för länkar */
+  color: #f5c518;
   text-decoration: none;
   padding: 5px 10px;
 }
