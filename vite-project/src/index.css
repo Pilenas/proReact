@@ -22,32 +22,43 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  width: 120px;
+  margin: 1em;
+  margin-right: 30px;
 }
 
-.black,
-.yellow {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  height: 50px;
+.star {
+  font-size: 38px;
+  color: gold;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.black i,
-.yellow i {
-  margin-right: 10px;
+.star:hover {
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
-.black {
-  background-color: #0c0c0c; /* Mörkgrått för ikoner */
-  color: #f5c518; /* Gul för text */
+.search-box {
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
 }
 
-.yellow {
-  background-color: #f5c518; /* Gul för ikoner */
-  color: #0c0c0c; /* Mörkgrått för text */
-  margin-right: 8rem;
+.search-input {
+  flex: 1; 
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-align: center; 
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  transform: scale(1.01);
+  outline: none;
+  box-shadow: 1px 1px 8px 2px rgb(131, 131, 131);
 }
 
 .search-box {
