@@ -1,14 +1,28 @@
-import React from 'react'
+
+import { Link } from 'react-router-dom';
 
 function Navitem() {
 
-    const user = true;
+    const user = false;
 
     return (
         <>
+        <Link to="/"> 
             <li>Startsida</li>
-            <li>Favoriter</li>
+        </Link>
+
+        <Link to="/favorites">
+
+            <li>Favoriter </li>
+
+        </Link>
+
+        <Link to="/watchlist">
+            
             <li>Watch List</li>
+            
+        </Link>
+
             <li>{ user ? 'Logga Ut' : 'Logga In' }</li>
                 
             

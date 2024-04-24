@@ -1,4 +1,4 @@
-import './main.css';
+import './home.css';
 
 function Trailer() {
     return (
