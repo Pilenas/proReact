@@ -1,7 +1,7 @@
 .movies-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .movie-card {
@@ -9,12 +9,46 @@
     justify-content: center;
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgb(36, 36, 36);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.favStar {
+    color: gold;
+    font-size: 28px;
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.favStar:hover, .watchPlus:hover {
+    transform: scale(1.10);
+}
+
+.watchPlus {
+    color: rgb(50, 50, 231);
+    border: 2px solid rgb(50, 50, 231);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 60px;
+    left: 25px;
 }
 
 h2 {
     color: #f5c518;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 10rem;
     margin-bottom: 1em; 
 }
@@ -22,6 +56,9 @@ h2 {
 .movie-poster {
     width: 100%; 
     max-width: 200px; 
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 .trailers-src {
