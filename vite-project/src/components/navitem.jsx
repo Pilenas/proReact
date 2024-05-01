@@ -1,5 +1,5 @@
-
 import { Link } from 'react-router-dom';
+import './navitem.css'; 
 
 function Navitem() {
 
@@ -7,23 +7,23 @@ function Navitem() {
 
     return (
         <>
-        <Link to="/"> 
+        <Link to="/" className="nav-item-link"> 
             <li>Startsida</li>
         </Link>
 
-        <Link to="/favorites">
+        <Link to="/favorites" className="nav-item-link">
 
             <li>Favoriter </li>
 
         </Link>
 
-        <Link to="/watchlist">
+        <Link to="/watchlist" className="nav-item-link">
             
             <li>Watch List</li>
             
         </Link>
 
-            <li>{ user ? 'Logga Ut' : 'Logga In' }</li>
+        <li>{ user ? 'Logga Ut' : 'Logga In' }</li>
                 
             
         </>

@@ -16,21 +16,25 @@ function Watchlist() {
     setWatchList(updatedWatchList);
 
     localStorage.setItem('watchList', JSON.stringify(updatedWatchList));
-};
-
+  };
 
   return (
     <section className="watchList-section">
-      {watchList.map(movie => (
-        <div className="movie-card" key={movie.imdbid} movie={movie}>
-          <h2>{movie.title}</h2>
-          <div className="image-wrapper">
-            <i className="favStar fa-solid fa-star"></i>
-            <i className="watchPlus fa-solid fa-minus" onClick={() => handleRemoveFromWatchList(movie.imdbid)}></i>
-            <img className="movie-poster" src={movie.poster} alt="" /> 
-          </div>
+      {watchList.length === 0 ? (
+        <div className="watchList-empty">
+          <p>Din watchlist är tom.</p>
         </div>
-      ))}
+      ) : (
+        watchList.map(movie => (
+          <div className="movie-card" key={movie.imdbid} movie={movie}>
+            <h2>{movie.title}</h2>
+            <div className="image-wrapper">
+              <i className="watchPlus fa-solid fa-minus" onClick={() => handleRemoveFromWatchList(movie.imdbid)}></i>
+              <img className="movie-poster" src={movie.poster} alt="" /> 
+            </div>
+          </div>
+        ))
+      )}
     </section>
   );
 }

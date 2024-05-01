@@ -31,29 +31,28 @@ function MovieList() {
   
   function MovieCard({ movie }) {
     
-    const handleWatchListToggle = () => {
-      const storedMovies = JSON.parse(localStorage.getItem('watchList')) || [];
-      const movieIndex = storedMovies.findIndex(item => item.imdbid === movie.imdbid);
+    const handleToggle = (listName) => {
+        const storedMovies = JSON.parse(localStorage.getItem(listName)) || [];
+        const movieIndex = storedMovies.findIndex(item => item.imdbid === movie.imdbid);
   
-      let updatedList;
-      if (movieIndex !== -1) {
-          updatedList = storedMovies.filter((item) => item.imdbid !== movie.imdbid);
-      } else {
-          updatedList = [...storedMovies, movie];
-      }
+        let updatedList;
+        if (movieIndex !== -1) {
+            updatedList = storedMovies.filter((item) => item.imdbid !== movie.imdbid);
+        } else {
+            updatedList = [...storedMovies, movie];
+        }
   
-      localStorage.setItem('watchList', JSON.stringify(updatedList));
-  };
-  
-  
-  
+        localStorage.setItem(listName, JSON.stringify(updatedList));
+    };
 
     return (
         <div className="movie-card">
             <h2>{movie.title}</h2>
             <div className="image-wrapper">
-                <i className="favStar fa-solid fa-star"></i>
-                <i className="watchPlus fa-solid fa-plus" onClick={handleWatchListToggle}></i>
+                {/* För favoriter */}
+                <i className="favStar fa-solid fa-star" onClick={() => handleToggle('favorites')}></i>
+                {/* För watchlist */}
+                <i className="watchPlus fa-solid fa-plus" onClick={() => handleToggle('watchList')}></i>
                 <img className="movie-poster" src={movie.poster} alt="" /> 
             </div>
         </div>
